@@ -9,17 +9,17 @@ import Expert from '../Expert/Expert';
 
 const experts = [
     {id: 1, name: 'Will Smith', img: expert1},
-    {id: 1, name: 'Rock Rock', img: expert2},
-    {id: 1, name: 'Chris rock', img: expert3},
-    {id: 1, name: 'Dwayne rock', img: expert4},
-    {id: 1, name: 'Ronaldo', img: expert5},
-    {id: 1, name: 'Messy', img: expert6}
+    {id: 2, name: 'Rock Rock', img: expert2},
+    {id: 3, name: 'Chris rock', img: expert3},
+    {id: 4, name: 'Dwayne rock', img: expert4},
+    {id: 5, name: 'Ronaldo', img: expert5},
+    {id: 6, name: 'Messy', img: expert6}
 ]
 
 const Experts = () => {
     return (
-        <div className='container'>
-            <h2 className='text-primary text-center'>Our Experts</h2>
+        <div id='experts' className='container'>
+            <h2 className='text-primary text-center mt-5'>Our Experts</h2>
             <div className="row">
             {
                 experts.map(expert => <Expert
